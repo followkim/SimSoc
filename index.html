@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SimSociety</title>
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+    <script src="js/population.js"></script>
+
+</head>
+<body onload="Init()">
+    <center><h1>SimSociety</h1></center>
+
+    <table cellpadding="20">
+        <tr>
+            <td>Population Size: <input type="text" name="pop_size" id="pop_size" value="50"  maxlength="4" size="4"></td>
+            <td>Needed: <input type="text" name="pop_need" id="pop_need" value="30"  maxlength="4" size="4"></td>
+            <td><button id="gen_pop" type="button" onclick="gen_pop()">Generate</button></td>
+        </tr>
+    </table>
+    
+
+    <div id="pop_table"></div>
+
+    <h2>Selected: <span id="selected"></span></h2>
+
+    <p>
+        <button id="go" disabled type="button" onclick="letsGo()">Go</button>
+        <button id="pause" disabled type="button" onclick="pause()">Pause</button>
+
+    <p>
+        Year:<span id="year"></span><center>
+            <table>
+                <tr>
+                    <td><canvas id="happiness_g" width="25" height="100" style="border:1px solid #d3d3d3;"></canvas><br /><span id="happiness" style="font-size: 8pt;">Happiness</span></td>
+                    <td><canvas id="crime_g" width="25" height="100" style="border:1px solid #d3d3d3;"></canvas><br /><span id="crime" style="font-size: 8pt;">Crime</span></td>
+                    <td><canvas id="hunger_g" width="25" height="100" style="border:1px solid #d3d3d3;"></canvas><br /><span id="hunger" style="font-size: 8pt;">Hunger</span></td>
+                    <td><canvas id="religion_g" width="25" height="100" style="border:1px solid #d3d3d3;"></canvas><br /><span id="religion" style="font-size: 8pt;">Religion</span></td>
+                    <td><canvas id="health_g" width="25" height="100" style="border:1px solid #d3d3d3;"></canvas><br /><span id="health" style="font-size: 8pt;">Health</span></td>
+                    <td><canvas id="education_g" width="25" height="100" style="border:1px solid #d3d3d3;"></canvas><br /><span id="education" style="font-size: 8pt;">Education</span></td>
+                    <td><canvas id="population_g" width="25" height="100" style="border:1px solid #d3d3d3;"></canvas><br /><span id="population" style="font-size: 8pt;">Population</span></td>
+                </tr>
+            </table>
+        </center>
+
+        <span id="log"></span>
+</body>
+
+
+</html>
+</body>
+
+</html>

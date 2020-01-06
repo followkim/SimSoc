@@ -1,0 +1,22 @@
+﻿body {
+  /* Uncomment this to enable scrolling and zooming
+  touch-action: manipulation;
+  */
+}
+
+
+html, body {
+    font-family: arial;
+    font-size: 12px;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+#gen_pop {
+    border: 1px solid black;
+}
